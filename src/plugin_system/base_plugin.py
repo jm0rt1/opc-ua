@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
-from PyQt5.QtCore import QObject
+from PySide6.QtCore import QObject
 
 
 class BasePlugin(QObject, ABC):
     """
-    Abstract base class for all plugins in the PyQt plugin system.
+    Abstract base class for all plugins in the PySide6 plugin system.
     """
 
     def __init__(self, parent=None):

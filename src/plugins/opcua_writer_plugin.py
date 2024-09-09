@@ -1,6 +1,6 @@
 from opcua import Client, ua
 from pyqt_plugin_system.base_plugin import BasePlugin
-from PyQt5.QtCore import pyqtSlot, QObject
+from PySide6.QtCore import Slot, QObject
 
 
 class OPCUAWriterPlugin(BasePlugin):
@@ -39,7 +39,7 @@ class OPCUAWriterPlugin(BasePlugin):
             self.client.disconnect()
             print(f"Disconnected from OPC-UA server at {self.server_url}.")
 
-    @pyqtSlot(object)
+    @Slot(object)
     def write_value(self, value):
         """
         Writes a value to the OPC-UA server node.

@@ -1,11 +1,10 @@
 import importlib
-import sys
-from PyQt5.QtCore import QObject
+from PySide6.QtCore import QObject
 
 
 class PluginManager(QObject):
     """
-    Class for managing plugins in the PyQt application.
+    Class for managing plugins in the PySide6 application.
     """
 
     def __init__(self, parent=None):

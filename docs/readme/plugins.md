@@ -6,7 +6,7 @@
 ### OPC UA Writer
 
 ```python
-from PyQt5.QtWidgets import QApplication, QPushButton, QVBoxLayout, QWidget
+from PySide6.QtWidgets import QApplication, QPushButton, QVBoxLayout, QWidget
 from pyqt_plugin_system.plugin_manager import PluginManager
 
 
@@ -47,3 +47,5 @@ app = QApplication([])
 window = MainWindow()
 window.show()
 app.exec_()
+
+```
